@@ -1823,7 +1823,7 @@ def bispectrum(k1, k2, x12, mu1, phi, f, sigma2v, Sigma2, deltaSigma2, bisp_nuis
 
     Q12 = Qij(k1AP, k2AP, x12AP, mu1AP, mu2AP, f, bisp_nuis_params);
     Q13 = Qij(k1AP, k3AP, x31AP, mu1AP, mu3AP, f, bisp_nuis_params);
-    Q23 = Qij(k2AP, k2AP, x23AP, mu2AP, mu3AP, f, bisp_nuis_params);
+    Q23 = Qij(k2AP, k3AP, x23AP, mu2AP, mu3AP, f, bisp_nuis_params);
 
 
     pk1   = np.interp(k1AP, k_pkl_pklnw[0], k_pkl_pklnw[1])
